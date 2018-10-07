@@ -5,6 +5,12 @@
         <title>List</title>
     </head>
     <body>
+    	{% for restaurant in restlist %}
+    	<ul>
+    		<li>{{restaurant.restaurant_name}}</li>
+    		<li>{{restaurant.food_type}}</li>
+    	</ul>
+    	{% endfor %}
 
     </body>
 </html>
